@@ -52,8 +52,7 @@
 -Understanding these terminologies will provide a strong foundation for writing a comprehensive and informative document on React.js.
 
 ## What is React ?
-React is a popular open-source JavaScript library  developed by Facebook for building user interfaces, particularly for single-page applications where you need a fast, interactive user experience. 
-
+ReactJS, also known as React, is a popular front-end JavaScript library for building user interfaces, particularly for single-page applications where you need a fast, interactive user experience. It was developed by Facebook and is widely used for creating dynamic and interactive web applications.  
 ## Advantages of React
 
 ### Easy to Learn
