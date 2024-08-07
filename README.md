@@ -54,10 +54,12 @@
 ## What is React ?
 ReactJS, also known as React, is a popular front-end JavaScript library for building user interfaces, particularly for single-page applications where you need a fast, interactive user experience. It was developed by Facebook and is widely used for creating dynamic and interactive web applications.  
 ## Advantages of React
+### It is composable  
 
+Composition is a function of combining parts or elements to form a whole. In the old days of web development, a website was usually a single HTML page. So, a lot of time those web pages ended up being very long with thousands of lines of HTML codes. With modern frameworks like React, we can divide these codes and put it in custom components. Then we can utilize these components and integrate them into one place. Hence the code becomes a lot more maintainable and flexible. 
 ### Easy to Learn
 
-ReactJS is much easier to learn and use. It comes with a good supply of documentation, tutorials, and training resources. Any developer who comes from a JavaScript background can easily understand and start creating web apps using React in a few days.
+ReactJS is easy to learn and use. A lot of documentation, tutorials, and training resources are available on the internet. Any developer who comes from a JavaScript background can easily understand and start creating web apps using React in a few days.
 
 ### Reusability
 
@@ -66,13 +68,17 @@ Reusability means that we can reuse the same components in multiple different pl
 ### Flexibility
 
 Flexibility in React means the code is easier to work with and update because it's built in small, separate pieces called components. This makes React code easier to understand and maintain compared to other frontend frameworks.
+### It is declarative  
 
+In react the DOM is declarative. We can make interactive UIs by changing the state of the component and React takes care of updating the DOM according to it. This means we never interact with DOM
 ### Single Web Page Application
 
-Building a single web page application can be considered an advantage of React because it provides a fast and responsive user experience.
+A Single Page Application (SPA) is a web application or website that interacts with the user by dynamically rewriting the current page rather than loading entire new pages from a server. This approach aims to provide a more fluid and responsive user experience, similar to that of a desktop application.
 
 
-## Getting Started with React
+## Getting Started with React  
+React is a popular JavaScript library for building user interfaces, particularly for single-page applications. Below is a detailed guide on how to get started with React, including installation, prerequisites and the basic steps to create your first React application.
+
 
 ## Installation
 
@@ -151,53 +157,7 @@ Let's create a simple "Hello World" component to get a feel for how React works.
    - If the development server is not already running, start it by running `npm start` in your terminal.
    - Open your web browser and navigate to `http://localhost:3000`. You should see "Hello, World!" displayed on the page.
 
-## Core Concepts of React
-
-### JSX 
-JSX stands for javascript XML and it allows us to write HTML in react 
-So basically it converts HTML into React elements 
-
-**Example 1**
-```jsx
-const myElement = (
-  <div>
-    <p>This is a react documentation</p>
-    <p>It is written by Aryan Mamania</p>
-  </div>
-);
-```
-
-**Example 2**
-Write "Hello" if x is less than 10, otherwise "Goodbye":
-```jsx
-// Import React
-import React from 'react';
-
-// Define the functional component
-function App() {
-  // Define the variables and logic
-  const x = 5;
-  let text = "Goodbye";
-  if (x < 10) {
-    text = "Hello";
-  }
-
-  // Create the element to be rendered
-  const myElement = <h1>{text}</h1>;
-
-  // Return the element to render it
-  return (
-    <div>
-      {myElement}
-    </div>
- 
-  );
-}
-
-// Export the component as default
-export default App;
-
-```
+## Core Concepts of React  
 
 ### Components
 Components can be considered as building blocks by which different parts of user interface is built for example : button , navbar etc
@@ -289,6 +249,53 @@ class Counter extends Component {
 // Export the component to be used in other parts of the app
 export default Counter;
 ```
+
+### JSX 
+JSX stands for javascript XML and it allows us to write HTML in react 
+So basically it converts HTML into React elements 
+
+**Example 1**
+```jsx
+const myElement = (
+  <div>
+    <p>This is a react documentation</p>
+    <p>It is written by Aryan Mamania</p>
+  </div>
+);
+```
+
+**Example 2**
+Write "Hello" if x is less than 10, otherwise "Goodbye":
+```jsx
+// Import React
+import React from 'react';
+
+// Define the functional component
+function App() {
+  // Define the variables and logic
+  const x = 5;
+  let text = "Goodbye";
+  if (x < 10) {
+    text = "Hello";
+  }
+
+  // Create the element to be rendered
+  const myElement = <h1>{text}</h1>;
+
+  // Return the element to render it
+  return (
+    <div>
+      {myElement}
+    </div>
+ 
+  );
+}
+
+// Export the component as default
+export default App;
+
+```
+
 
 ### Props
 Props is short for properties and are used to pass data from one component to another . Props are similiar to function arguments and are passed to components in same was as arguments are passed in a function .  
