@@ -137,7 +137,7 @@ Before you begin, make sure you have the following installed on your machine:
 
 5. **Folder Structure of a simple React Project**
    
-![images](https://github.com/user-attachments/assets/4b849f3f-693e-4726-8d30-f0715c3a5aa6)
+      ![images](https://github.com/user-attachments/assets/4b849f3f-693e-4726-8d30-f0715c3a5aa6)
 
 
 ## Hello World
@@ -146,7 +146,7 @@ Let's create a simple "Hello World" component to get a feel for how React works.
 
 ### Steps to Write Hello World 
 
-1. **Open Your Project in a Code Editor**:
+1. **Launch Your Project in your Code Editor**:
    - Use a code editor like Visual Studio Code (VS Code) to open the `my-app` directory.
 
 2. **Edit `src/App.js`**:
