@@ -25,32 +25,34 @@
 ## Some technologies you should know before starting documentation  
 Before diving into React, it's beneficial to have a solid grasp of several foundational technologies. Here are some key ones:
 
-HTML and CSS:
+- HTML and CSS:
 
-HTML: Know how to structure web pages and utilize HTML tags effectively.  
-CSS: Understand styling, layout techniques, and responsive design to enhance the appearance of your web pages.  
+   HTML: Know how to structure web pages and utilize HTML tags effectively.  
+   CSS: Understand styling, layout techniques, and responsive design to enhance the appearance of your web pages.  
 
-JavaScript (ES6+):  
+- JavaScript (ES6+):  
 
-Basics: Be familiar with variables, functions, loops, conditionals, and events.    
+   Basics: Be familiar with variables, functions, loops, conditionals, and events.    
 
 Advanced Concepts:  
 
-ES6+ Features: Learn about arrow functions, destructuring, template literals, spread/rest operators, and classes.  
-Modules: Understand import and export statements for modular coding.  
+- ES6+ Features: Learn about arrow functions, destructuring, template literals, spread/rest operators, and classes.  
+- Modules: Understand import and export statements for modular coding.  
 
-JavaScript Frameworks/Libraries (optional but helpful):  
+- JavaScript Frameworks/Libraries (optional but helpful):  
 
-Basic knowledge of libraries like jQuery or frameworks like Angular or Vue can provide context for how React fits into the broader front-end development ecosystem.  
+   Basic knowledge of libraries like jQuery or frameworks like Angular or Vue can provide context for how React fits into the 
+   broader front-end development ecosystem.  
 
-Node.js and npm:  
+- Node.js and npm:  
 
-Node.js: Understand the JavaScript runtime environment outside the browser.  
-npm (Node Package Manager): Learn to manage dependencies, run scripts, and comprehend package.json.  
+   Node.js: Understand the JavaScript runtime environment outside the browser.  
+   npm (Node Package Manager): Learn to manage dependencies, run scripts, and comprehend package.json.  
 
-Version Control Systems:  
+- Version Control Systems:  
 
-Git: Know the basics of version control, including creating repositories, committing changes, branching, merging, and pushing to remote repositories like GitHub.  
+   Git: Know the basics of version control, including creating repositories, committing changes, branching, merging, and 
+   pushing to remote repositories like GitHub.  
 
 Familiarity with these technologies will give you a strong foundation, making your journey with React smoother and more efficient.  
 
@@ -95,12 +97,13 @@ To begin using React, you'll need to configure your development environment. The
 Before you begin, make sure you have the following installed on your machine:
 - **Node.js** (https://nodejs.org/) - React requires Node.js for building and running your application.
 - **npm** (Node Package Manager) - This comes bundled with Node.js and helps manage dependencies.
+- **Text Editor or Integrated Development Environment (IDE)** - Visual Studio Code(preferred).
 
 ### Steps
 
 1. **Install Node.js and npm**:
    - Download and install Node.js in linux with help of this command
-    ```jsx
+     ```bash
      sudo apt install nodejs npm
      ```
    - After downloading Verify the installation by running the following commands in your terminal:
