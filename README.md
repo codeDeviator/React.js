@@ -130,11 +130,10 @@ Before you begin, make sure you have the following installed on your machine:
      ```bash
      npm start
      ```
-     ![welcome-to-react](https://github.com/user-attachments/assets/43eeff46-2542-46a0-872e-f15aa856a65c)
-
      Your new React application will open in your default web browser at `http://localhost:3000` (port number can change if port 3000 is busy with some other content)  
-     You will see a react logo in browser . Below is the Screen Shot for the webpage which you will see 
-<img src="/assests/screenshot_myfirstreact.png" alt="" style="width:50" /> 
+     You will see a react logo in browser . Below is the Screen Shot for the webpage which you will see
+
+      ![welcome-to-react](https://github.com/user-attachments/assets/43eeff46-2542-46a0-872e-f15aa856a65c)
 
 5. **Folder Structure of a simple React Project**
 <img src="./assests/folder1.PNG" alt="" style="width: 40%;"/>
