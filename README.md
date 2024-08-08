@@ -20,12 +20,12 @@
 - Single Web Page application : A Single Page Application is a type of web application that loads a single HTML page and dynamically updates the content as the user interacts with the app, without requiring a full page reload.
 - Asynchronous : Asynchronous means that some tasks can start, and you don't have to wait for them to finish before moving on to other tasks
 - Jsx : JavaScript Xml is a syntax extension for javascript in react where we can write html code within javascript making code look more clean and readable  
--Components: The building blocks of a React application. Components can be functional or class-based.
+- Components: The building blocks of a React application. Components can be functional or class-based.
 
 
 Understanding these terminologies will provide a strong foundation for writing a comprehensive and informative document on React.js.
 
-## What is React ?
+## Introduction to React
 ReactJS, also known as React, is a popular front-end JavaScript library for building user interfaces, particularly for single-page applications where you need a fast, interactive user experience. It was developed by Facebook and is widely used for creating dynamic and interactive web applications.  
 ## Advantages of React
 ### It is composable  
