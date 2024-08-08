@@ -168,6 +168,9 @@ Let's create a simple "Hello World" component to get a feel for how React works.
 3. **Run Your Application**:
    - If the development server is not already running, start it by running `npm start` in your terminal.
    - Open your web browser and navigate to `http://localhost:3000`. You should see "Hello, World!" displayed on the page.
+  
+     ![Finaloutput1-300x166](https://github.com/user-attachments/assets/dd52e5ef-ae94-4491-a970-9e98ab8675ad)
+
 
 ## Core Concepts of React  
 
