@@ -175,8 +175,8 @@ Let's create a simple "Hello World" component to get a feel for how React works.
 ## Core Concepts of React  
 
 ### Components
-Components can be considered as building blocks by which different parts of user interface is built for example : button , navbar etc
-Componets are independent and reusable bits of code 
+Components can be considered as building blocks by which different parts of user interface is built for example : button , navbar etc. In other words, we can say that every application you will develop in React will be made up of pieces called components. Components make the task of building UIs much easier. You can see a UI broken down into multiple individual pieces called components and work on them independently and merge them all in a parent component which will be your final UI.  
+Componets are independent and reusable bits of code.  
 There are 2 types of React componets -
 
 - Functional Components
@@ -211,7 +211,7 @@ export default Counter;
 ```
 
 - Class based Components 
-React Class Components are JavaScript classes that extend React.Component. They define the UI, manage state, and handle events within your application. Unlike functional components, which are based on function syntax, class components follow the traditional class-based approach.
+React Class Components are JavaScript classes that extend React.   Component. They define the UI, manage state, and handle events within your application. Unlike functional components, which are based on function syntax, class components follow the traditional class-based approach.
 After introduction of React Hooks use of class components has decreased because react hooks makes the code look clean and syntax is easy to understand
 The render() method in react class components returns JSX elements describing the UI of the Application.
 
@@ -219,7 +219,7 @@ Example -
 ```jsx 
 import React, { Component } from 'react';
 
-// Define a class-based component by extending React.Component
+// Define a class-based component by extending React Component
 class Counter extends Component {
   // Constructor method to initialize state
   constructor(props) {
@@ -278,39 +278,6 @@ const myElement = (
   </div>
 );
 ```
-
-**Example 2**
-Write "Hello" if x is less than 10, otherwise "Goodbye":
-```jsx
-// Import React
-import React from 'react';
-
-// Define the functional component
-function App() {
-  // Define the variables and logic
-  const x = 5;
-  let text = "Goodbye";
-  if (x < 10) {
-    text = "Hello";
-  }
-
-  // Create the element to be rendered
-  const myElement = <h1>{text}</h1>;
-
-  // Return the element to render it
-  return (
-    <div>
-      {myElement}
-    </div>
- 
-  );
-}
-
-// Export the component as default
-export default App;
-
-```
-
 
 ### Props
 Props is short for properties and are used to pass data from one component to another . Props are similiar to function arguments and are passed to components in same was as arguments are passed in a function .  
