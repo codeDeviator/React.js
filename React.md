@@ -67,6 +67,9 @@ Before you begin, make sure you have the following installed on your machine:
      npm -v
      ```
 
+
+![Alt Text](https://github.com/codeDeviator/React.js/blob/main/assets/facebook-1024x542.png)
+
 2. **Install Create React App**:
    - Open your terminal and run the following command to install Create React App globally:
      ```bash
