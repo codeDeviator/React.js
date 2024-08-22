@@ -59,7 +59,7 @@ Familiarity with these technologies will give you a strong foundation, making yo
 ## Introduction to React
 ReactJS, also known as React, is a popular front-end JavaScript library for building user interfaces, particularly for single-page applications where you need a fast, interactive user experience. It was developed by Facebook and is widely used for creating dynamic and interactive web applications.  
 
-![facebook-1024x542](https://github.com/user-attachments/assets/15cafbeb-52a5-4d6b-9023-8c80063acd26)
+![facebook-1024x542](https://github.com/user-attachments/assets/c843ada3-dcaa-48fc-980b-92247fec76c0)
 
 ## Advantages of React
 ### It is composable  
