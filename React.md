@@ -119,9 +119,9 @@ Before you begin, make sure you have the following installed on your machine:
    
 Conclusion
 Setting up a React project is straightforward, and Create React App helps you hit the ground running with a default configuration. From here, you can start building your components, managing state, and adding functionality to your app. React's vast ecosystem allows for easy integration with various tools, making it a versatile choice for web development.
-## Hello World
+## Namaste React
 
-Let's create a simple "Hello World" component to get a feel for how React works.
+Let's create a simple "Namaste React" component to get a feel for how React works.
 
 ### Steps to Write Namaste React 
 
