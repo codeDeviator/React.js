@@ -14,15 +14,23 @@
 - React Router
 
 ## Some terminologies you should know before starting documentation
+- HTML : Understanding the basic structure of HTML (e.g., tags, attributes) is important since JSX (React’s 
+  templating language) is similar to HTML
+- CSS Styling: Basic knowledge of CSS for styling components is useful. You should understand how to apply styles through 
+  classes and inline styles
 - Library : A library is a collection of pre-written code that you can use to perform specific tasks
 - UI : User Interface means the things which user sees when he/she opens the Web app
-- Rendering : Rendering in React refers to the process of generating the user interface (UI) that the user sees on the screen based on the state and data of the application
-- Single Web Page application : A Single Page Application is a type of web application that loads a single HTML page and dynamically updates the content as the user interacts with the app, without requiring a full page reload.
-- Asynchronous : Asynchronous means that some tasks can start, and you don't have to wait for them to finish before moving on to other tasks
-- Jsx : JavaScript Xml is a syntax extension for javascript in react where we can write html code within javascript making code look more clean and readable
+- Rendering : Rendering in React refers to the process of generating the user interface (UI) that the user sees on the screen 
+  based on the state and data of the application
+- Single Web Page application : A Single Page Application is a type of web application that loads a single HTML page and 
+  dynamically updates the content as the user interacts with the app, without requiring a full page reload.
+- Jsx : JavaScript Xml is a syntax extension for javascript in react where we can write html code within javascript making 
+  code look more clean and readable
 
 ## What is React ?
-React is a popular open-source JavaScript library  developed by Facebook for building user interfaces, particularly for single-page applications where you need a fast, interactive user experience. 
+A well-liked JavaScript package called React.js is used to create user interfaces, especially for single-page apps where the user interface (UI) refreshes dynamically without requiring a page reload. React is a framework created and maintained by Facebook that is simple, fast, and scalable. It enables developers to create sophisticated user interfaces (UIs) out of discrete, small pieces of code known as "components."  
+
+![Alt Text](https://github.com/codeDeviator/React.js/blob/main/assets/facebook-1024x542.png)
 
 ## Advantages of React
 
@@ -41,6 +49,16 @@ Flexibility in React means the code is easier to work with and update because it
 ### Single Web Page Application
 
 Building a single web page application can be considered an advantage of React because it provides a fast and responsive user experience.
+
+### Unidirectional Data Flow
+
+Predictable Data Management: React enforces a unidirectional data flow, meaning that data flows in a single direction from parent components to child components through props. This predictable flow makes it easier to manage state and debug applications
+Simplified Debugging: Since data flows in one direction, tracking down issues and understanding how state changes affect the application becomes simpler
+
+### Component-Based Architecture  
+
+Reusability: React allows you to build UI components that can be reused across your application, reducing duplication and speeding up development
+Maintainability: Components are self-contained, making the code more modular and easier to maintain or update independently
 
 
 ## Getting Started with React
@@ -69,7 +87,6 @@ Before you begin, make sure you have the following installed on your machine:
      ```
 
 
-![Alt Text](https://github.com/codeDeviator/React.js/blob/main/assets/facebook-1024x542.png)
 
 2. **Install Create React App**:
    - Open your terminal and run the following command to install Create React App globally:
