@@ -8,11 +8,11 @@
 - Advantages of React
 - Getting Started with React
 - Namaste React
-- Core Concepts of React 
+- Core Concepts of React
+- - React Router
 - State Management 
 - Event Handling 
 - Hooks 
-- React Router
 
 ## Some terminologies you should know before starting documentation
 - HTML : Understanding the basic structure of HTML (e.g., tags, attributes) is important since JSX (React’s 
