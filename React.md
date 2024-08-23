@@ -151,8 +151,8 @@ Let's create a simple "Namaste React" component to get a feel for how React work
 ## Core Concepts of React
 
 ### JSX 
-JSX stands for javascript XML and it allows us to write HTML in react 
-So basically it converts HTML into React elements 
+
+JavaScript XML, or JSX, is an HTML-like syntax extension for JavaScript. It is used to specify the UI's appearance when used with React. Instead of being a string or HTML, JSX is an XML-like syntax that is converted to standard JavaScript by Babel and other tools before being shown in a browser. In essence, it transforms HTML into React components.   
 
 **Example 1**
 ```jsx
@@ -163,8 +163,20 @@ const myElement = (
   </div>
 );
 ```
-
 **Example 2**
+```
+function Greeting() {
+  const name = "Ayush";
+  return (
+    <div>
+      <h1>Hello, {name}!</h1>
+      <p>Welcome to learning React with JSX.</p>
+    </div>
+  );
+}
+```
+
+**Example 3**
 Write "Hello" if x is less than 10, otherwise "Goodbye":
 ```jsx
 // Import React
@@ -195,10 +207,90 @@ function App() {
 export default App;
 
 ```
+## React Router 
+React Router is yet another important library for routing in react and enables navigation from one page to another or from one component to another . React Router changes the browser URL and shows the page which is specified in givenn URL .  
+Main advantage of using React router is that React Router helps in creating single-page applications with navigation and multiple views without the need for refreshing the page.This enables faster user experiences because the browser doesn't need to request an entirely new document or re-evaluate CSS and JavaScript assets for the next page. It also enables more dynamic user experiences with things like animation.
 
-### Components
-Components can be considered as building blocks by which different parts of user interface is built for example : button , navbar etc
-Componets are independent and reusable bits of code 
+
+### Note 
+There were many changes made when react router was shifted from react-router v5 to v6 . 
+This documentation contains information for react router v6
+
+### How to install React Router
+Run the below command in your terminal 
+```
+npm i react-router-dom 
+```
+
+### Main Components of React Router are :-
+
+- BrowserRouter: BrowserRouter is a router implementation that uses the HTML5 history API(pushState, replaceState, and the popstate event) to keep your UI in sync with the URL. It is the parent component that is used to store all of the other components.
+- Routes: It’s a new component introduced in the v6 and an upgrade of the component. The main advantages of Routes over Switch Routes are chosen based on the best match instead of being traversed in order.
+- Route: Route is the conditionally shown component that renders some UI when its path matches the current URL.
+- Link: The link component is used to create links to different routes and implement navigation around the application. It works like an HTML anchor tag.
+
+Example of React Router in React JS
+
+```jsx
+import React, { Component } from "react";
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route,
+    Link,
+} from "react-router-dom";
+import Home from "./component/home";
+import About from "./component/about";
+import Contact from "./component/contact";
+import "./App.css";
+
+class App extends Component {
+    render() {
+        return (
+            <Router>
+                <div className="App">
+                    <ul className="App-header">
+                        <li>
+                            <Link to="/">Home</Link>
+                        </li>
+                        <li>
+                            <Link to="/about">
+                                About Us
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/contact">
+                                Contact Us
+                            </Link>
+                        </li>
+                    </ul>
+                    <Routes>
+                        <Route
+                            path="/"
+                            element={<Home />}
+                        ></Route>
+                        <Route
+                            path="/about"
+                            element={<About />}
+                        ></Route>
+                        <Route
+                            path="/contact"
+                            element={<Contact />}
+                        ></Route>
+                    </Routes>
+                </div>
+            </Router>
+        );
+    }
+}
+
+export default App;
+```
+
+The above code shows different route which takes us to different elements. When going from one page to another the whole page does not get loaded again and only the components which are required are loaded which makes the webpage more efficient.
+
+### Components  
+The essential building elements of every React application are React components. They enable developers to divide complicated user interfaces (UIs) into smaller, easier-to-manage components by encapsulating portions of the UI and the logic that powers them. Componets are separate, reusable code segments    
 There are 2 types of React componets -
 
 - Functional Components
@@ -524,86 +616,7 @@ Custom hooks are user-defined functions in React that utilize one or more built-
 ### Basic difference betweeen State and Hooks 
 State is a way to store information in react component that can change over time when components are updated while hooks are special functions provided by React that enable us to use React features, like state, context, and more in function components . Before hooks, these features were only available in class components
 
-## React Router 
-React Router is yet another important library for routing in react and enables navigation from one page to another or from one component to another . React Router changes the browser URL and shows the page which is specified in givenn URL .  
-Main advantage of using React router is that React Router helps in creating single-page applications with navigation and multiple views without the need for refreshing the page.This enables faster user experiences because the browser doesn't need to request an entirely new document or re-evaluate CSS and JavaScript assets for the next page. It also enables more dynamic user experiences with things like animation.
 
-
-### Note 
-There were many changes made when react router was shifted from react-router v5 to v6 . 
-This documentation contains information for react router v6
-
-### How to install React Router
-Run the below command in your terminal 
-```
-npm i react-router-dom 
-```
-
-### Main Components of React Router are :-
-
-- BrowserRouter: BrowserRouter is a router implementation that uses the HTML5 history API(pushState, replaceState, and the popstate event) to keep your UI in sync with the URL. It is the parent component that is used to store all of the other components.
-- Routes: It’s a new component introduced in the v6 and an upgrade of the component. The main advantages of Routes over Switch Routes are chosen based on the best match instead of being traversed in order.
-- Route: Route is the conditionally shown component that renders some UI when its path matches the current URL.
-- Link: The link component is used to create links to different routes and implement navigation around the application. It works like an HTML anchor tag.
-
-Example of React Router in React JS
-
-```jsx
-import React, { Component } from "react";
-import {
-    BrowserRouter as Router,
-    Routes,
-    Route,
-    Link,
-} from "react-router-dom";
-import Home from "./component/home";
-import About from "./component/about";
-import Contact from "./component/contact";
-import "./App.css";
-
-class App extends Component {
-    render() {
-        return (
-            <Router>
-                <div className="App">
-                    <ul className="App-header">
-                        <li>
-                            <Link to="/">Home</Link>
-                        </li>
-                        <li>
-                            <Link to="/about">
-                                About Us
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/contact">
-                                Contact Us
-                            </Link>
-                        </li>
-                    </ul>
-                    <Routes>
-                        <Route
-                            path="/"
-                            element={<Home />}
-                        ></Route>
-                        <Route
-                            path="/about"
-                            element={<About />}
-                        ></Route>
-                        <Route
-                            path="/contact"
-                            element={<Contact />}
-                        ></Route>
-                    </Routes>
-                </div>
-            </Router>
-        );
-    }
-}
-
-export default App;
-```
-The above code shows different route which takes us to different elements. When going from one page to another the whole page does not get loaded again and only the components which are required are loaded which makes the webpage more efficient.
 
 ## Reference Links 
 - https://react.dev/learn
