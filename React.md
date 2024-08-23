@@ -422,7 +422,7 @@ class App extends Component {
 
 export default App;
 ```
-```
+```jsx
 import React from "react";
 import {
     BrowserRouter as Router,
