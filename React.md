@@ -123,7 +123,7 @@ Setting up a React project is straightforward, and Create React App helps you hi
 
 Let's create a simple "Hello World" component to get a feel for how React works.
 
-### Steps to Write Hello World 
+### Steps to Write Namaste React 
 
 1. **Open Your Project in a Code Editor**:
    - Use a code editor like Visual Studio Code (VS Code) to open the `my-app` directory.
@@ -136,7 +136,7 @@ Let's create a simple "Hello World" component to get a feel for how React works.
      function App() {
        return (
          <div>
-           <h1>Hello, World!</h1>
+           <h1>Namaste, React!</h1>
          </div>
        );
      }
@@ -146,7 +146,7 @@ Let's create a simple "Hello World" component to get a feel for how React works.
 
 3. **Run Your Application**:
    - If the development server is not already running, start it by running `npm start` in your terminal.
-   - Open your web browser and navigate to `http://localhost:3000`. You should see "Hello, World!" displayed on the page.
+   - Open your web browser and navigate to `http://localhost:3000`. You should see "Namaste, React!" displayed on the page.
 
 ## Core Concepts of React
 
