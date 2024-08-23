@@ -158,8 +158,8 @@ So basically it converts HTML into React elements
 ```jsx
 const myElement = (
   <div>
-    <p>This is a react documentation</p>
-    <p>It is written by Aryan Mamania</p>
+    <p>This is my React Document</p>
+    <p>It is written by Ayush</p>
   </div>
 );
 ```
