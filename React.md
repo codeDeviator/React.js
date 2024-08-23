@@ -111,6 +111,7 @@ Before you begin, make sure you have the following installed on your machine:
 ![Alt Text](https://github.com/codeDeviator/React.js/blob/main/assets/welcome-to-react.png)
 
 5. **Folder Structure of a simple React Project**
+   
 ![Alt Text](https://github.com/codeDeviator/React.js/blob/main/assets/images.png)  
    
 Conclusion
