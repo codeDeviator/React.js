@@ -1,5 +1,5 @@
 # **REACT**
-<img src="/assests//react.js-img.png" alt="" style="width:100%;"/>
+
 
 ## Table of Content
 - Introduction to React
