@@ -9,7 +9,7 @@
 - Getting Started with React
 - Namaste React
 - Core Concepts of React
-- - React Router
+- React Router
 - State Management 
 - Event Handling 
 - Hooks 
@@ -155,17 +155,8 @@ Let's create a simple "Namaste React" component to get a feel for how React work
 
 JavaScript XML, or JSX, is an HTML-like syntax extension for JavaScript. It is used to specify the UI's appearance when used with React. Instead of being a string or HTML, JSX is an XML-like syntax that is converted to standard JavaScript by Babel and other tools before being shown in a browser. In essence, it transforms HTML into React components.   
 
-**Example 1**
+**Example 1**  
 ```jsx
-const myElement = (
-  <div>
-    <p>This is my React Document</p>
-    <p>It is written by Ayush</p>
-  </div>
-);
-```
-**Example 2**
-```
 function Greeting() {
   const name = "Ayush";
   return (
@@ -177,7 +168,7 @@ function Greeting() {
 }
 ```
 
-**Example 3**
+**Example 2**
 Write "Hello" if x is less than 10, otherwise "Goodbye":
 ```jsx
 // Import React
