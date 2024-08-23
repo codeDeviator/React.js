@@ -422,6 +422,63 @@ class App extends Component {
 
 export default App;
 ```
+```
+import React from "react";
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route,
+    NavLink,
+} from "react-router-dom";
+import Home from "./components/Home";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import "./App.css";
+
+const App = () => {
+    return (
+        <Router>
+            <div className="App">
+                <nav className="App-header">
+                    <ul>
+                        <li>
+                            <NavLink 
+                                to="/" 
+                                className={({ isActive }) => isActive ? "active-link" : ""}
+                                end>
+                                Home
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink 
+                                to="/about"
+                                className={({ isActive }) => isActive ? "active-link" : ""}
+                            >
+                                About Us
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink 
+                                to="/contact"
+                                className={({ isActive }) => isActive ? "active-link" : ""}
+                            >
+                                Contact Us
+                            </NavLink>
+                        </li>
+                    </ul>
+                </nav>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/contact" element={<Contact />} />
+                </Routes>
+            </div>
+        </Router>
+    );
+};
+
+export default App;
+```
 
 The above code shows different route which takes us to different elements. When going from one page to another the whole page does not get loaded again and only the components which are required are loaded which makes the webpage more efficient.
 
