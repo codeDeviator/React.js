@@ -213,11 +213,11 @@ React Router's primary benefit is its ability to assist in the creation of singl
 
 ### Note 
 There were many changes made when react router was shifted from react-router v5 to v6 .  
-For example: 
-Simplified Route Definition
-V5: In React Router v5, routes were nested using Route components with explicit render or component props. Nesting could become complex and cumbersome.
+For example:  
+Simplified Route Definition  
+V5: In React Router v5, routes were nested using Route components with explicit render or component props. Nesting could become complex and cumbersome.  
 V6: React Router v6 uses a simpler and more declarative element prop, which replaces the component and render props. Additionally, routes are nested directly inside the Routes component, making the structure more intuitive.  
-This documentation contains information for react router v6
+This documentation contains information for react router v6.  
 
 ### How to install React Router
 Run the below command in your terminal 
