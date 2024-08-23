@@ -111,7 +111,8 @@ Before you begin, make sure you have the following installed on your machine:
 ![Alt Text](https://github.com/codeDeviator/React.js/blob/main/assets/welcome-to-react.png)
 
 5. **Folder Structure of a simple React Project**
-
+![Alt Text](https://github.com/codeDeviator/React.js/blob/main/assets/images.png)  
+   
 Conclusion
 Setting up a React project is straightforward, and Create React App helps you hit the ground running with a default configuration. From here, you can start building your components, managing state, and adding functionality to your app. React's vast ecosystem allows for easy integration with various tools, making it a versatile choice for web development.
 ## Hello World
