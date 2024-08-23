@@ -63,7 +63,9 @@ Maintainability: Components are self-contained, making the code more modular and
 
 ## Getting Started with React  
 
-React.js is a popular JavaScript library for building user interfaces, and getting started with it is straightforward with modern tooling. Here's a step-by-step guide to set up your React development environment.
+With the help of contemporary tools, creating user interfaces with the popular JavaScript package React.js is simple. This is a detailed how-to for configuring your React development environment.  
+
+A React application can be created using one of two methods: the first is the conventional method, which we used to create the app by selecting "Create React App," which installs a lot of extra files and dependencies. The other method was recently implemented and is called "React Vite," which is renowned for its lightning-fast development and only installs the necessary number of files or dependencies. Here, we'll learn how to use Create React App (CRA) to create a React application.
 
 ## Installation
 
