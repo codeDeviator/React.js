@@ -640,7 +640,8 @@ function Counter() {
   );
 }
 
-export default Counter;```
+export default Counter;
+```  
 
 How it works: useState takes an initial value (0 in this case) and returns an array with two elements: the current state value (count) and a function (setCount) to update it. Every time setCount is called, the component re-renders with the updated state.
 
@@ -667,7 +668,8 @@ function Timer() {
   return <div>Seconds: {seconds}</div>;
 }
 
-export default Timer;```
+export default Timer;
+```  
 
 How it works: useEffect takes two arguments: a callback function where the side effect code runs, and an optional dependency array that determines when the effect should run. If the dependency array is empty, the effect runs only after the initial render. If it contains variables, the effect will re-run whenever those variables change. You can also return a cleanup function to clean up resources like subscriptions or timers when the component unmounts.
 
@@ -697,7 +699,8 @@ function App() {
   );
 }
 
-export default App;```
+export default App;
+```  
 
 How it works: First, you create a Context object with React.createContext(). The useContext hook allows any component to access the context value, as long as it's wrapped in a Context.Provider. In the example above, the ThemedButton component gets the value of "dark" from the context.
 
@@ -735,7 +738,8 @@ function Counter() {
   );
 }
 
-export default Counter;```
+export default Counter;
+```  
 
 How it works: useReducer takes a reducer function and an initial state as arguments. The reducer function defines how the state should change in response to specific actions. You then dispatch actions to trigger state changes. This is particularly useful for more complex state logic where you might have several state variables and actions.
 
@@ -763,7 +767,8 @@ function FocusInput() {
   );
 }
 
-export default FocusInput;```
+export default FocusInput;
+```  
 
 How it works: useRef creates an object with a current property that holds the reference to the DOM element. The current value persists across renders without causing re-renders, and you can use it to directly manipulate the DOM element (like focusing an input in this example).
 
@@ -791,7 +796,8 @@ function HomePage() {
   );
 }
 
-export default HomePage;```  \
+export default HomePage;
+```  
 
 How it works: useNavigate returns a function that can be used to programmatically navigate to different routes in your application. When navigate('/about') is called, React Router will change the URL and render the component associated with the /about route.
 
