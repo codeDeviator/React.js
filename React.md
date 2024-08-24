@@ -612,7 +612,7 @@ In the above code whenever a button is clicked it shows an alert stating that bu
 Hooks is an important concept in react and were added in react version 16.8 . Hooks are special functions that let you use state and other react features in functional components and make it easier to manage state and other effects .   
 After hooks use of Class components decreased because hooks allow us to use features of class components in functional components making the code look clean 
 
-Commonly Used Hooks  
+Commonly Used Hooks:    
 - useState: The useState hook is used to add state management to functional components. State allows React components to keep track of changing data, and useState lets you declare state variables in your component.
 
 Example:
