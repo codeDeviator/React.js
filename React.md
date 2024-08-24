@@ -612,17 +612,8 @@ In the above code whenever a button is clicked it shows an alert stating that bu
 Hooks is an important concept in react and were added in react version 16.8 . Hooks are special functions that let you use state and other react features in functional components and make it easier to manage state and other effects .   
 After hooks use of Class components decreased because hooks allow us to use features of class components in functional components making the code look clean 
 
-Commonly Used Hooks
-
-   - useState: Provides a state variable and a method to update it in order to manage state in functional components.
-   - useEffect: Performs side effects in a functional component, like fetching data or directly interacting with the DOM.
-   - useContext: Enables context value access and sharing between components without requiring props to be passed via each 
-     tier of the component tree.
-   - useReducer: Manages complex state logic using a reducer function and actions, offering an alternative to useState.
-   - useRef: Gives access to permanent data or DOM elements between renders without requiring new renders.
-   - useNavigate: You may programmatically traverse between routes in your application with React Router's useNavigate hook.
-      
-The useState hook is used to add state management to functional components. State allows React components to keep track of changing data, and useState lets you declare state variables in your component.
+Commonly Used Hooks  
+- useState: The useState hook is used to add state management to functional components. State allows React components to keep track of changing data, and useState lets you declare state variables in your component.
 
 Example:
 ```jsx
@@ -643,10 +634,9 @@ function Counter() {
 export default Counter;
 ```  
 
-How it works: useState takes an initial value (0 in this case) and returns an array with two elements: the current state value (count) and a function (setCount) to update it. Every time setCount is called, the component re-renders with the updated state.
+How it works: useState takes an initial value (0 in this case) and returns an array with two elements: the current state value (count) and a function (setCount) to update it. Every time setCount is called, the component re-renders with the updated state.  
 
-2. useEffect
-The useEffect hook allows you to perform side effects in your components, such as data fetching, setting up subscriptions, or manually updating the DOM. It is the replacement for lifecycle methods like componentDidMount, componentDidUpdate, and componentWillUnmount in class-based components.
+- useEffect: The useEffect hook allows you to perform side effects in your components, such as data fetching, setting up subscriptions, or manually updating the DOM. It is the replacement for lifecycle methods like componentDidMount, componentDidUpdate, and componentWillUnmount in class-based components.
 
 Example:
 ```jsx
@@ -673,8 +663,7 @@ export default Timer;
 
 How it works: useEffect takes two arguments: a callback function where the side effect code runs, and an optional dependency array that determines when the effect should run. If the dependency array is empty, the effect runs only after the initial render. If it contains variables, the effect will re-run whenever those variables change. You can also return a cleanup function to clean up resources like subscriptions or timers when the component unmounts.
 
-3. useContext
-The useContext hook provides a way to share data (state, functions, etc.) across components without having to pass props manually through every level of the component tree. It helps avoid "prop drilling."
+- useContext: The useContext hook provides a way to share data (state, functions, etc.) across components without having to pass props manually through every level of the component tree. It helps avoid "prop drilling."
 
 Example:
 ```jsx
@@ -704,8 +693,7 @@ export default App;
 
 How it works: First, you create a Context object with React.createContext(). The useContext hook allows any component to access the context value, as long as it's wrapped in a Context.Provider. In the example above, the ThemedButton component gets the value of "dark" from the context.
 
-4. useReducer
-The useReducer hook is an alternative to useState for managing more complex state logic. It is similar to useState but provides a more structured way of handling state updates, especially when the state changes involve multiple actions.
+- useReducer: The useReducer hook is an alternative to useState for managing more complex state logic. It is similar to useState but provides a more structured way of handling state updates, especially when the state changes involve multiple actions.
 
 Example:
 ```jsx
@@ -742,9 +730,8 @@ export default Counter;
 ```  
 
 How it works: useReducer takes a reducer function and an initial state as arguments. The reducer function defines how the state should change in response to specific actions. You then dispatch actions to trigger state changes. This is particularly useful for more complex state logic where you might have several state variables and actions.
-
-5. useRef
-The useRef hook is used to create a reference to a DOM element or to persist a value across renders without causing a re-render. It provides a way to directly interact with DOM elements, similar to how document.querySelector works in vanilla JavaScript.  
+   
+- useRef: The useRef hook is used to create a reference to a DOM element or to persist a value across renders without causing a re-render. It provides a way to directly interact with DOM elements, similar to how document.querySelector works in vanilla JavaScript.  
 
 Example:
 ```jsx
@@ -771,9 +758,7 @@ export default FocusInput;
 ```  
 
 How it works: useRef creates an object with a current property that holds the reference to the DOM element. The current value persists across renders without causing re-renders, and you can use it to directly manipulate the DOM element (like focusing an input in this example).
-
-6. useNavigate
-The useNavigate hook is part of React Router and is used for programmatic navigation within your application. It replaces the older useHistory hook from previous versions of React Router.
+   - useNavigate: The useNavigate hook is part of React Router and is used for programmatic navigation within your application. It replaces the older useHistory hook from previous versions of React Router.
 
 Example:
 ```jsx
